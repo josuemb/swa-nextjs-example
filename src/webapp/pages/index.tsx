@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Enter your name and press "Say Hello" button.
+          Enter your name and press &quotSayHello&quot button.
         </p>
 
         <div className={styles.grid}>

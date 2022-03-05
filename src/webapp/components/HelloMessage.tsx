@@ -8,10 +8,10 @@ export interface HelloMessageProps {
 }
 
 const HelloMessage = (props: HelloMessageProps): JSX.Element => {
+    const { isLoading, data, error } = useHello(props.name);
     if (props.name === null) {
         return <></>
     }
-    const { isLoading, data, error } = useHello(props.name);
     if (isLoading === true) {
         return <span>Loading...</span>
     }
