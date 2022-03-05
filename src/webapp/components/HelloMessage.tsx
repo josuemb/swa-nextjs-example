@@ -13,15 +13,31 @@ const HelloMessage = (props: HelloMessageProps): JSX.Element => {
         return <></>
     }
     if (isLoading === true) {
-        return <span>Loading...</span>
+        return (
+            <div className={styles.card}>
+                <span>Loading...</span>
+            </div>
+        )
     }
     if (error !== undefined) {
-        return <span className={styles.card}>{`Error: ${error}`}</span>
+        return (
+            <div className={styles.card}>
+                <span className={styles.card}>{`Error: ${error}`}</span>
+            </div>
+        )
     }
     if (data !== undefined) {
-        return <span>{`Message: ${data?.message}`}</span>
+        return (
+            <div className={styles.card}>
+                <span>{`Message: ${data?.message}`}</span>
+            </div>
+        )
     }
-    return <span>{`Error: ${DEFAULT_MESSAGE}`}</span>
+    return (
+        <div className={styles.card}>
+            <span>{`Error: ${DEFAULT_MESSAGE}`}</span>
+        </div>
+    )
 };
 
 export default HelloMessage;

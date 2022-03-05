@@ -19,14 +19,9 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Enter your name and press &quotSayHello&quot button.
+          Enter your name and press &quot;SayHello&quot; button.
         </p>
-
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <SayHello />
-          </div>
-        </div>
+        <SayHello />
       </main>
 
       <footer className={styles.footer}>
