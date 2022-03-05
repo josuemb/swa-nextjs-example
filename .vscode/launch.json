@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: debug full stack",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "swa start http://localhost:3000 --run \"yarn dev\" --api-location http://localhost:7071",
+      "preLaunchTask": "func start",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "Azure Static Web Apps emulator started at.*(https?://\\w+:?\\d*)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge",
+      },
+      "cwd": "${workspaceFolder}/src/webapp"
+    }
+  ]
+}

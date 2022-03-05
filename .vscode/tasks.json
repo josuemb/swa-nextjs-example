@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "func start",
+			"type": "func",
+			"command": "host start --typescript",
+			"problemMatcher": "$func-node-watch",
+			"isBackground": true,
+			"dependsOn": "yarn build (functions)",
+			"options": {
+				"cwd": "${workspaceFolder}/src/api"
+			}
+		},
+		{
+			"type": "shell",
+			"label": "yarn build (functions)",			
+			"command": "yarn run build",
+			"dependsOn": "yarn install (functions)",
+			"problemMatcher": "$tsc",
+			"options": {
+				"cwd": "${workspaceFolder}/src/api"
+			}
+		},
+		{
+			"type": "shell",
+			"label": "yarn install (functions)",
+			"command": "yarn install",
+			"options": {
+				"cwd": "${workspaceFolder}/src/api"
+			}
+		}
+	]
+}
