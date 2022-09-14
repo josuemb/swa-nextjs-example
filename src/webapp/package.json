@@ -10,23 +10,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "glob-parent": "^5.1.2",
+    "glob-parent": "^6.0.2",
     "imagemin-gifsicle": "^7.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^9.0.0",
+    "imagemin-svgo": "^10.0.1",
     "next": "^12.1.0",
     "next-optimized-images": "^2.6.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "swr": "^1.2.2",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
-    "@types/node": "17.0.21",
-    "@types/react": "17.0.39",
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.1.0",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
     "typescript": "^4.5.5"
   }
 }
