@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "glob-parent": "^6.0.2",
+    "glob-parent": "^5.1.2",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
