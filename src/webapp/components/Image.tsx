@@ -1,19 +1,14 @@
-import NextImage, { ImageLoaderProps } from "next/image";
+import NextImage from "next/image";
 import { ImageProps } from "next/image";
 
-// Custom Image component adding a custom loader to allow next export command.
-// See:
-// https://nextjs.org/docs/api-reference/next/image#loader
+// Custom Image component with unoptimized prop for static export.
+// See: https://nextjs.org/docs/app/api-reference/components/image#unoptimized
 
-const customLoader = ({ src }: ImageLoaderProps) => {
-    return src
-}
-
-const Image = (imageProps: ImageProps): JSX.Element => {
+const Image = (imageProps: ImageProps) => {
     return (
         <NextImage
             {...imageProps}
-            loader={customLoader}
+            unoptimized
         />
     )
 };

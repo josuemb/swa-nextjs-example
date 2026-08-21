@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src={require("../public/nextjs.svg")} alt="Next JS Logo" width={72} height={16} />
+            <Image src="/nextjs.svg" alt="Next JS Logo" width={72} height={16} />
           </span>
         </a>
       </footer>

@@ -7,7 +7,7 @@ export interface HelloMessageProps {
     name: string | null
 }
 
-const HelloMessage = (props: HelloMessageProps): JSX.Element => {
+const HelloMessage = (props: HelloMessageProps) => {
     const { isLoading, data, error } = useHello(props.name);
     if (props.name === null) {
         return <></>
