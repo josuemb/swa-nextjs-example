@@ -9,7 +9,7 @@ const customLoader = ({ src }: ImageLoaderProps) => {
     return src
 }
 
-const Image = (imageProps: ImageProps): JSX.Element => {
+const Image = (imageProps: ImageProps): React.ReactNode => {
     return (
         <NextImage
             {...imageProps}
