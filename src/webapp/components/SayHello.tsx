@@ -2,7 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import HelloMessage from "./HelloMessage";
 import styles from '../styles/Home.module.css'
 
-const SayHello = (): JSX.Element => {
+const SayHello = (): React.ReactNode => {
     const [tempName, setTempName] = useState<string>('');
     const [name, setName] = useState<string | null>(null);
 
